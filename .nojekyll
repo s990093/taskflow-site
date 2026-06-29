@@ -1,0 +1,2 @@
+# This file tells GitHub Pages not to process with Jekyll
+# Required for proper static site serving (especially with _ or other files)

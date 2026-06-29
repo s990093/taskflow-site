@@ -1,0 +1,71 @@
+/* TaskFlow Site - Custom Styles */
+/* Extracted from inline <style> for better maintainability */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --primary: #E7EB54;
+}
+
+body {
+  font-family: 'Noto Sans TC', 'Inter', system-ui, sans-serif;
+}
+
+/* Glow effect for firefly theme */
+.firefly-glow {
+  box-shadow: 0 0 15px rgba(231, 235, 84, 0.3);
+}
+
+/* Smooth scroll for anchor links */
+.section {
+  scroll-margin-top: 80px;
+}
+
+/* Feature cards */
+.feature-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* Navigation links */
+.nav-link {
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #E7EB54;
+}
+
+/* Additional polish for the site */
+.hero-bg {
+  position: relative;
+}
+
+.nav {
+  backdrop-filter: blur(8px);
+}
+
+/* Privacy page specific */
+.policy-section {
+  margin-bottom: 2rem;
+}
+
+.policy-section h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #141414;
+}
+
+/* Make sure links are visible */
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #E7EB54;
+}

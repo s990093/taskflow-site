@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow - 你的 AI 學習與專注夥伴</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-[#F2F2F7] text-[#141414]">
+  <!-- Navbar -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 bg-[#E7EB54] rounded-2xl flex items-center justify-center">
+          <span class="text-[#141414] text-xl font-bold">TF</span>
+        </div>
+        <div>
+          <div class="font-bold text-xl tracking-tight">TaskFlow</div>
+          <div class="text-[10px] text-gray-500 -mt-1">螢火蟲學習夥伴</div>
+        </div>
+      </div>
+      
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#features" class="nav-link text-gray-600 hover:text-[#141414]">功能特色</a>
+        <a href="#how" class="nav-link text-gray-600 hover:text-[#141414]">如何使用</a>
+        <a href="privacy.html" class="nav-link text-gray-600 hover:text-[#141414]">隱私政策</a>
+      </div>
+      
+      <div class="flex items-center gap-3">
+        <a href="privacy.html" 
+           class="px-4 py-2 text-sm font-medium border border-gray-300 rounded-2xl hover:bg-gray-100 transition-colors">
+          隱私政策
+        </a>
+        <a href="#" 
+           class="px-5 py-2 bg-[#141414] text-white text-sm font-semibold rounded-2xl hover:bg-black transition-colors">
+          下載 App
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="max-w-6xl mx-auto px-6 pt-16 pb-20 text-center relative">
+    <div class="absolute inset-0 -z-10 opacity-30">
+      <div class="absolute top-10 left-1/4 w-64 h-64 bg-[#E7EB54] rounded-full blur-[120px]"></div>
+      <div class="absolute bottom-0 right-1/4 w-48 h-48 bg-purple-300 rounded-full blur-[100px]"></div>
+    </div>
+    
+    <div class="inline-flex items-center gap-2 px-4 py-1 bg-white/80 backdrop-blur rounded-full border mb-6">
+      <div class="w-2 h-2 bg-[#E7EB54] rounded-full animate-pulse"></div>
+      <span class="text-xs font-medium text-gray-600">iOS 18+ 專屬體驗</span>
+    </div>
+    
+    <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-[0.95] mb-6">
+      讓螢火蟲<br>陪你專注學習
+    </h1>
+    
+    <p class="max-w-md mx-auto text-xl text-gray-600 mb-10">
+      TaskFlow 是專為學生與終身學習者打造的 AI 生產力工具。<br>
+      結合智慧番茄鐘、任務規劃、個人化 AI 教練，以及跨裝置小工具，讓你每天都能高效進步。
+    </p>
+    
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a href="#" 
+         class="inline-flex items-center justify-center px-8 py-4 bg-[#E7EB54] hover:bg-[#d4d84a] text-[#141414] font-semibold rounded-3xl text-lg transition-all active:scale-[0.985] shadow-lg shadow-[#E7EB54]/30">
+        立即下載（App Store）
+      </a>
+      <a href="#features" 
+         class="inline-flex items-center justify-center px-8 py-4 border border-gray-300 hover:bg-white text-[#141414] font-semibold rounded-3xl text-lg transition-all">
+        了解更多
+      </a>
+    </div>
+    
+    <div class="mt-8 text-xs text-gray-500">
+      免費使用核心功能 • AI 功能需自備 Gemini API Key
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div id="features" class="max-w-6xl mx-auto px-6 pb-20">
+    <div class="text-center mb-12">
+      <div class="inline px-3 py-1 text-xs font-semibold tracking-[1.5px] bg-white border rounded-full mb-3">CORE FEATURES</div>
+      <h2 class="text-4xl font-bold tracking-[-1.5px]">專為認真學習的人設計</h2>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Feature 1 -->
+      <div class="feature-card bg-white rounded-3xl p-8 border border-gray-100 hover:border-[#E7EB54]/30">
+        <div class="w-11 h-11 flex items-center justify-center rounded-2xl mb-8" style="background: linear-gradient(135deg, #E7EB54, #d4d84a);">
+          <span class="text-[#141414] text-2xl">⏱</span>
+        </div>
+        <h3 class="font-semibold text-2xl mb-3 tracking-tight">智慧番茄鐘</h3>
+        <p class="text-gray-600 text-[15px] leading-relaxed">支援蕃茄鐘、正計時、倒數三種模式。搭配 Live Activity 與 Dynamic Island，鎖屏也能即時追蹤進度與完成率。</p>
+        <div class="mt-auto pt-8 text-xs font-medium text-[#E7EB54] flex items-center gap-1">
+          ＋ 專注分析與統計
+        </div>
+      </div>
+      
+      <!-- Feature 2 -->
+      <div class="feature-card bg-white rounded-3xl p-8 border border-gray-100 hover:border-[#E7EB54]/30">
+        <div class="w-11 h-11 flex items-center justify-center rounded-2xl mb-8" style="background: linear-gradient(135deg, #E7EB54, #d4d84a);">
+          <span class="text-[#141414] text-2xl">📋</span>
+        </div>
+        <h3 class="font-semibold text-2xl mb-3 tracking-tight">任務與週曆</h3>
+        <p class="text-gray-600 text-[15px] leading-relaxed">Inbox + 週曆雙模式。可自訂分類、優先序、到期日。AI 自動幫你把模糊目標拆解成可執行的每日任務。</p>
+      </div>
+      
+      <!-- Feature 3 -->
+      <div class="feature-card bg-white rounded-3xl p-8 border border-gray-100 hover:border-[#E7EB54]/30">
+        <div class="w-11 h-11 flex items-center justify-center rounded-2xl mb-8" style="background: linear-gradient(135deg, #E7EB54, #d4d84a);">
+          <span class="text-[#141414] text-2xl">🪲</span>
+        </div>
+        <h3 class="font-semibold text-2xl mb-3 tracking-tight">螢火蟲 AI 教練</h3>
+        <p class="text-gray-600 text-[15px] leading-relaxed">自然語言生成計畫、週報分析、任務建議。4 種模式（聊聊/規劃/教練/分析），記住你的個人化設定與學習風格。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div id="how" class="bg-white py-16 border-y">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="text-[#E7EB54] font-semibold text-sm tracking-widest mb-2">ONBOARDING + DAILY USE</div>
+          <h2 class="text-4xl font-bold tracking-tight mb-6">簡單上手，長期陪伴</h2>
+          
+          <div class="space-y-6 text-[15px] text-gray-700">
+            <div class="flex gap-4">
+              <div class="font-mono text-xs mt-1 w-6 text-right text-gray-400">01</div>
+              <div>完成 10 步個人化設定，AI 會為你產生專屬建議。</div>
+            </div>
+            <div class="flex gap-4">
+              <div class="font-mono text-xs mt-1 w-6 text-right text-gray-400">02</div>
+              <div>首頁總覽今日進度與核心任務，一鍵啟動專注。</div>
+            </div>
+            <div class="flex gap-4">
+              <div class="font-mono text-xs mt-1 w-6 text-right text-gray-400">03</div>
+              <div>使用 AI 夥伴輸入「這週要準備期中考」，自動拆解成可執行的任務。</div>
+            </div>
+            <div class="flex gap-4">
+              <div class="font-mono text-xs mt-1 w-6 text-right text-gray-400">04</div>
+              <div>每週自動產生 Weekly Memories 回顧，幫助你持續調整節奏。</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-[#F2F2F7] rounded-3xl p-8 text-sm">
+          <div class="font-medium mb-4">核心價值</div>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex gap-3"><span class="text-[#E7EB54]">→</span> 所有資料主要儲存在你的裝置</li>
+            <li class="flex gap-3"><span class="text-[#E7EB54]">→</span> AI 僅在你使用相關功能時才會傳送必要內容</li>
+            <li class="flex gap-3"><span class="text-[#E7EB54]">→</span> 完整支援小工具與鎖屏即時活動</li>
+            <li class="flex gap-3"><span class="text-[#E7EB54]">→</span> 可在設定頁完全控制個人化 AI 指令</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why TaskFlow / 更多介紹 -->
+  <div class="max-w-6xl mx-auto px-6 py-16">
+    <div class="text-center mb-10">
+      <div class="text-[#E7EB54] font-semibold text-sm tracking-[2px] mb-2">為什麼選擇 TaskFlow</div>
+      <h2 class="text-3xl font-bold tracking-tight">不只是工具，更是你的學習夥伴</h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="bg-white p-6 rounded-3xl border">
+        <h3 class="font-semibold text-lg mb-2">本地優先，隱私安心</h3>
+        <p class="text-gray-600 text-sm">所有任務、專注紀錄、反思都儲存在你的裝置上。只有在你主動使用 AI 功能時，才會傳送必要內容給 Gemini。無追蹤、無廣告。</p>
+      </div>
+      <div class="bg-white p-6 rounded-3xl border">
+        <h3 class="font-semibold text-lg mb-2">AI 真正懂你</h3>
+        <p class="text-gray-600 text-sm">透過 onboarding 10 步設定，AI 會根據你的身份、目標、能量時段、學習風格量身打造建議。不再是通用回應。</p>
+      </div>
+      <div class="bg-white p-6 rounded-3xl border">
+        <h3 class="font-semibold text-lg mb-2">跨平台無縫體驗</h3>
+        <p class="text-gray-600 text-sm">iPhone 鎖屏 Live Activity、iPad、Mac Catalyst 小工具，隨時掌握進度。一次設定，全裝置同步。</p>
+      </div>
+      <div class="bg-white p-6 rounded-3xl border">
+        <h3 class="font-semibold text-lg mb-2">持續進化</h3>
+        <p class="text-gray-600 text-sm">每週自動產生 Weekly Memories 回顧，幫助你看到成長與調整空間。內建 AI 分析，讓反省變簡單。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- About / 成員 -->
+  <div class="max-w-6xl mx-auto px-6 py-16 border-t">
+    <div class="max-w-xl">
+      <h2 class="font-bold text-2xl mb-6">關於我們</h2>
+      
+      <div class="flex items-start gap-5">
+        <div class="w-16 h-16 bg-gray-200 rounded-2xl flex-shrink-0"></div>
+        <div>
+          <div class="font-semibold">hungwei</div>
+          <div class="text-sm text-gray-600 mt-1">獨立開發者</div>
+          <p class="mt-3 text-sm text-gray-600 leading-relaxed">
+            TaskFlow 是我為自己與同樣需要專注學習的人打造的工具。
+            希望能用簡單而有力的方式，幫助大家養成好習慣。
+          </p>
+          <div class="mt-3 text-xs text-gray-500">目前為一人團隊維護</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer / Links -->
+  <div class="max-w-6xl mx-auto px-6 py-12 text-sm border-t">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-y-8">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-8 h-8 bg-[#E7EB54] rounded-2xl flex items-center justify-center">
+            <span class="text-[#141414] font-bold">TF</span>
+          </div>
+          <div class="font-semibold">TaskFlow</div>
+        </div>
+        <div class="text-gray-500 text-xs">© 2026 獨立開發者製作</div>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-x-10 gap-y-2 text-sm">
+        <a href="privacy.html" class="text-gray-600 hover:text-[#141414]">隱私政策</a>
+        <a href="#" class="text-gray-600 hover:text-[#141414]">使用條款</a>
+        <a href="#" class="text-gray-600 hover:text-[#141414]">支援與回饋</a>
+        <a href="#" class="text-gray-600 hover:text-[#141414]">GitHub（開發相關）</a>
+      </div>
+    </div>
+    
+    <div class="mt-10 pt-6 border-t text-[11px] text-gray-400 max-w-[520px]">
+      TaskFlow 是一款本地優先的生產力工具。AI 功能需使用者自行提供 Google Gemini API Key。
+    </div>
+  </div>
+</body>
+</html>
