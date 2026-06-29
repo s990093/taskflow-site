@@ -59,7 +59,7 @@
     
     <p class="max-w-md mx-auto text-xl text-gray-600 mb-10">
       TaskFlow 是專為學生與終身學習者打造的 AI 生產力工具。<br>
-      結合智慧番茄鐘、任務規劃、個人化 AI 教練，以及跨裝置小工具，讓你每天都能高效進步。
+      核心亮點是「螢火蟲 AI 教練」——用自然語言跟你聊天，自動幫你規劃、分析、建議。結合番茄鐘與任務管理，讓學習真正高效又人性化。
     </p>
     
     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -113,7 +113,7 @@
           <span class="text-[#141414] text-2xl">🪲</span>
         </div>
         <h3 class="font-semibold text-2xl mb-3 tracking-tight">螢火蟲 AI 教練</h3>
-        <p class="text-gray-600 text-[15px] leading-relaxed">自然語言生成計畫、週報分析、任務建議。4 種模式（聊聊/規劃/教練/分析），記住你的個人化設定與學習風格。</p>
+        <p class="text-gray-600 text-[15px] leading-relaxed">用自然語言直接跟 AI 聊天。它有 4 種模式：聊聊日常、自動規劃學習計畫、根據數據給教練建議、分析你的表現。完全記住你的個人設定。</p>
       </div>
     </div>
   </div>
@@ -159,29 +159,138 @@
     </div>
   </div>
 
-  <!-- Why TaskFlow / 更多介紹 -->
+  <!-- AI 功能亮點 (重設計) -->
+  <div class="max-w-6xl mx-auto px-6 py-16 bg-white border-y">
+    <div class="text-center mb-12">
+      <div class="inline-block px-4 py-1 bg-[#E7EB54]/10 text-[#E7EB54] text-sm font-semibold tracking-wider rounded-full mb-3">POWERED BY GEMINI</div>
+      <h2 class="text-4xl font-bold tracking-tight mb-3">螢火蟲 AI 到底能做什麼？</h2>
+      <p class="max-w-xl mx-auto text-gray-600">不只是聊天機器人，而是真正懂你的個人化學習教練。所有功能都深度整合你的任務與專注數據。</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      
+      <!-- AI Feature 1 -->
+      <div class="p-6 border border-gray-100 rounded-3xl hover:border-[#E7EB54]/40 transition">
+        <div class="text-2xl mb-3">💬</div>
+        <h4 class="font-semibold text-lg mb-2">自然語言聊天教練</h4>
+        <p class="text-sm text-gray-600">直接打字或語音輸入你的狀況、目標、心情，AI 會像真實教練一樣給建議、鼓勵或調整計畫。</p>
+      </div>
+
+      <!-- AI Feature 2 -->
+      <div class="p-6 border border-gray-100 rounded-3xl hover:border-[#E7EB54]/40 transition">
+        <div class="text-2xl mb-3">📋</div>
+        <h4 class="font-semibold text-lg mb-2">4 種專業 AI 模式</h4>
+        <ul class="text-sm text-gray-600 space-y-1 mt-1">
+          <li><strong>聊聊</strong>：日常陪伴與動機激發</li>
+          <li><strong>規劃</strong>：自動產生完整學習計畫</li>
+          <li><strong>教練</strong>：根據真實數據給個人化建議</li>
+          <li><strong>分析</strong>：深入表現分析與策略</li>
+        </ul>
+      </div>
+
+      <!-- AI Feature 3 -->
+      <div class="p-6 border border-gray-100 rounded-3xl hover:border-[#E7EB54]/40 transition">
+        <div class="text-2xl mb-3">✨</div>
+        <h4 class="font-semibold text-lg mb-2">自動任務生成與拆解</h4>
+        <p class="text-sm text-gray-600">輸入一句話（如「下週要考微積分」），AI 立刻拆成具體可執行的任務、清單與時間建議。</p>
+      </div>
+
+      <!-- AI Feature 4 -->
+      <div class="p-6 border border-gray-100 rounded-3xl hover:border-[#E7EB54]/40 transition">
+        <div class="text-2xl mb-3">📊</div>
+        <h4 class="font-semibold text-lg mb-2">每週智慧週報</h4>
+        <p class="text-sm text-gray-600">自動分析你的任務完成率、專注時數、連勝狀態，產出洞察與下週改善建議。</p>
+      </div>
+
+      <!-- AI Feature 5 -->
+      <div class="p-6 border border-gray-100 rounded-3xl hover:border-[#E7EB54]/40 transition">
+        <div class="text-2xl mb-3">🎯</div>
+        <h4 class="font-semibold text-lg mb-2">任務優化助手</h4>
+        <p class="text-sm text-gray-600">幫你潤色任務標題、建議合適分類、調整優先序，讓你的待辦清單更清晰有效。</p>
+      </div>
+
+      <!-- AI Feature 6 -->
+      <div class="p-6 border border-gray-100 rounded-3xl hover:border-[#E7EB54]/40 transition">
+        <div class="text-2xl mb-3">🧠</div>
+        <h4 class="font-semibold text-lg mb-2">高度個人化</h4>
+        <p class="text-sm text-gray-600">Onboarding 10 步後，AI 會產生專屬你的 system prompt。之後所有回應都根據你的身份、目標、習慣客製。</p>
+      </div>
+
+    </div>
+
+    <div class="mt-8 text-center text-sm text-gray-500">
+      AI 功能需自行準備 Google Gemini API Key（在 App 內設定即可使用）
+    </div>
+  </div>
+
+  <!-- 真實故事：與網紅合作 -->
+  <div class="max-w-6xl mx-auto px-6 py-16">
+    <div class="text-center mb-10">
+      <div class="text-[#E7EB54] font-semibold text-sm tracking-[2px] mb-2">真實案例</div>
+      <h2 class="text-3xl font-bold tracking-tight mb-3">蕉人 Bionana 的高中時間管理系統</h2>
+      <p class="max-w-2xl mx-auto text-gray-600">熱舞社社長、校排前 30，同時兼顧比賽。她如何在高中三年平衡課業與社團？TaskFlow 的 AI 與計時工具，正是幫助她實踐這套系統的關鍵。</p>
+      <div class="mt-4 flex justify-center gap-4">
+        <a href="https://www.instagram.com/bionana_1021/" target="_blank" class="text-sm px-4 py-1 border rounded-full hover:bg-gray-100">Instagram @bionana_1021</a>
+        <a href="https://www.youtube.com/watch?v=Pgy2tepclMc" target="_blank" class="text-sm px-4 py-1 border rounded-full hover:bg-gray-100">觀看完整影片</a>
+      </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Point 1 -->
+        <div class="bg-white p-6 rounded-3xl border">
+          <div class="text-[#E7EB54] text-xl mb-2">1</div>
+          <h4 class="font-semibold mb-2">確認重心與目標（具象化）</h4>
+          <p class="text-sm text-gray-600 mb-3">先釐清現階段最重要的目標，並具體化，例如「校排進前幾名」或「社團完成大成發」。</p>
+          <div class="text-xs text-[#E7EB54]">TaskFlow AI 幫你：輸入模糊目標，自動拆解成具體任務與里程碑。</div>
+        </div>
+
+        <!-- Point 2 -->
+        <div class="bg-white p-6 rounded-3xl border">
+          <div class="text-[#E7EB54] text-xl mb-2">2</div>
+          <h4 class="font-semibold mb-2">三段式時間規劃法</h4>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li><strong>月計畫</strong>：標記當月大事件，掌握節奏。</li>
+            <li><strong>週計畫</strong>：依重要性與緊急度排優先順序。</li>
+            <li><strong>日計畫</strong>：用時間塊（Time Blocking）專時專用。</li>
+          </ul>
+          <div class="text-xs text-[#E7EB54] mt-3">TaskFlow AI 幫你：自然語言輸入，自動產生月/週計畫，並建議每日時間塊。</div>
+        </div>
+
+        <!-- Point 3 -->
+        <div class="bg-white p-6 rounded-3xl border">
+          <div class="text-[#E7EB54] text-xl mb-2">3</div>
+          <h4 class="font-semibold mb-2">高效執行與動態調整</h4>
+          <p class="text-sm text-gray-600 mb-3">追求專注度而非時長；計畫要滾動式修正。</p>
+          <div class="text-xs text-[#E7EB54]">TaskFlow 幫你：番茄鐘專注執行 + 每週 AI 週報自動分析，建議下週調整。</div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center text-sm text-gray-500">
+        💡 時間管理的本質：不是塞滿行程，而是「在對的時間做對的事」。
+      </div>
+    </div>
+  </div>
+
+  <!-- Why TaskFlow (精簡版) -->
   <div class="max-w-6xl mx-auto px-6 py-16">
     <div class="text-center mb-10">
       <div class="text-[#E7EB54] font-semibold text-sm tracking-[2px] mb-2">為什麼選擇 TaskFlow</div>
-      <h2 class="text-3xl font-bold tracking-tight">不只是工具，更是你的學習夥伴</h2>
+      <h2 class="text-3xl font-bold tracking-tight">本地優先 × AI 深度整合</h2>
     </div>
     
-    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto text-sm">
       <div class="bg-white p-6 rounded-3xl border">
-        <h3 class="font-semibold text-lg mb-2">本地優先，隱私安心</h3>
-        <p class="text-gray-600 text-sm">所有任務、專注紀錄、反思都儲存在你的裝置上。只有在你主動使用 AI 功能時，才會傳送必要內容給 Gemini。無追蹤、無廣告。</p>
+        <h3 class="font-semibold mb-2">本地優先，隱私安心</h3>
+        <p class="text-gray-600">任務、專注紀錄全部存在裝置。只有使用 AI 時才傳送必要內容給 Gemini。</p>
       </div>
       <div class="bg-white p-6 rounded-3xl border">
-        <h3 class="font-semibold text-lg mb-2">AI 真正懂你</h3>
-        <p class="text-gray-600 text-sm">透過 onboarding 10 步設定，AI 會根據你的身份、目標、能量時段、學習風格量身打造建議。不再是通用回應。</p>
+        <h3 class="font-semibold mb-2">AI 與專注深度結合</h3>
+        <p class="text-gray-600">AI 產生的任務可以一鍵加入，AI 建議可直接搭配番茄鐘執行。</p>
       </div>
       <div class="bg-white p-6 rounded-3xl border">
-        <h3 class="font-semibold text-lg mb-2">跨平台無縫體驗</h3>
-        <p class="text-gray-600 text-sm">iPhone 鎖屏 Live Activity、iPad、Mac Catalyst 小工具，隨時掌握進度。一次設定，全裝置同步。</p>
-      </div>
-      <div class="bg-white p-6 rounded-3xl border">
-        <h3 class="font-semibold text-lg mb-2">持續進化</h3>
-        <p class="text-gray-600 text-sm">每週自動產生 Weekly Memories 回顧，幫助你看到成長與調整空間。內建 AI 分析，讓反省變簡單。</p>
+        <h3 class="font-semibold mb-2">可完全自訂的 AI</h3>
+        <p class="text-gray-600">設定頁可以直接編輯或重新生成你的個人化 AI 指令。</p>
       </div>
     </div>
   </div>
