@@ -69,3 +69,87 @@ a {
 a:hover {
   color: #E7EB54;
 }
+
+/* Smooth scroll animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered delays for list items */
+.step-item {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.step-item.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Visual small effects - firefly / fruit dots */
+.visual-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #E7EB54;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: firefly-float 3s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes firefly-float {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.6; }
+  50% { transform: translateY(-15px) scale(1.1); opacity: 0.9; }
+}
+
+.visual-banana {
+  position: absolute;
+  font-size: 14px;
+  opacity: 0.15;
+  animation: banana-sway 4s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes banana-sway {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+/* Enhanced card hover and focus */
+.feature-card, .step-card {
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.feature-card:hover, .step-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Silky scroll experience */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section reveal with subtle scale */
+.section-reveal {
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-reveal.in-view {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Progress bar animation used in visual cards */
+@keyframes progress {
+  from { width: 0%; }
+  to { width: 65%; }
+}

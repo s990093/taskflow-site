@@ -76,10 +76,16 @@
     <div class="mt-8 text-xs text-gray-500">
       免費使用核心功能 • AI 功能需自備 Gemini API Key
     </div>
+
+    <!-- Silky scroll prompt with visual effect -->
+    <div class="mt-10 flex flex-col items-center text-[#E7EB54] text-xs tracking-widest">
+      <div>SCROLL TO EXPLORE</div>
+      <div class="mt-1 w-px h-6 bg-gradient-to-b from-[#E7EB54] to-transparent animate-[bounce_1.5s_infinite]"></div>
+    </div>
   </div>
 
   <!-- Features -->
-  <div id="features" class="max-w-6xl mx-auto px-6 pb-20">
+  <div id="features" class="max-w-6xl mx-auto px-6 pb-20 animate-on-scroll">
     <div class="text-center mb-12">
       <div class="inline px-3 py-1 text-xs font-semibold tracking-[1.5px] bg-white border rounded-full mb-3">CORE FEATURES</div>
       <h2 class="text-4xl font-bold tracking-[-1.5px]">專為認真學習的人設計</h2>
@@ -118,49 +124,119 @@
     </div>
   </div>
 
-  <!-- How it works -->
-  <div id="how" class="bg-white py-16 border-y">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <div class="text-[#E7EB54] font-semibold text-sm tracking-widest mb-2">ONBOARDING + DAILY USE</div>
-          <h2 class="text-4xl font-bold tracking-tight mb-6">簡單上手，長期陪伴</h2>
-          
-          <div class="space-y-6 text-[15px] text-gray-700">
-            <div class="flex gap-4">
-              <div class="font-mono text-xs mt-1 w-6 text-right text-gray-400">01</div>
-              <div>完成 10 步個人化設定，AI 會為你產生專屬建議。</div>
+  <!-- How it works - 重新設計：簡單上手，長期陪伴 + 絲滑捲動動畫 + 視覺化小效果 -->
+  <div id="how" class="bg-white py-20 border-y relative overflow-hidden">
+    <!-- Subtle background visual dots for scroll effect -->
+    <div class="absolute inset-0 pointer-events-none opacity-30">
+      <div class="visual-dot" style="left: 10%; top: 20%; animation-delay: -0.5s;"></div>
+      <div class="visual-dot" style="left: 85%; top: 60%; animation-delay: -1.8s;"></div>
+      <div class="visual-banana" style="left: 15%; top: 75%;">🍌</div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 relative">
+      <div class="grid lg:grid-cols-5 gap-12 items-start">
+        
+        <!-- Left: Visual timeline + steps (silky reveal on scroll) -->
+        <div class="lg:col-span-3">
+          <div class="text-[#E7EB54] font-semibold text-sm tracking-[2px] mb-3">ONBOARDING + DAILY USE</div>
+          <h2 class="text-5xl font-bold tracking-[-1.5px] mb-4">簡單上手，<br>長期陪伴</h2>
+          <p class="text-lg text-gray-600 max-w-md mb-10">從第一天設定到每天使用，TaskFlow 像螢火蟲一樣溫柔但堅定地陪著你。</p>
+
+          <div class="space-y-5 relative pl-8 border-l-2 border-[#E7EB54]/20">
+            <!-- Step 1 -->
+            <div class="step-item animate-on-scroll flex gap-5 group">
+              <div class="flex-shrink-0 w-9 h-9 rounded-2xl bg-[#E7EB54] text-[#141414] font-bold flex items-center justify-center text-sm mt-1 shadow-inner group-hover:scale-110 transition">01</div>
+              <div>
+                <div class="font-semibold text-lg tracking-tight mb-1 flex items-center gap-2">
+                  個人化設定
+                  <span class="text-xs px-2 py-0.5 bg-white border rounded-full text-[#E7EB54]">10 步</span>
+                </div>
+                <p class="text-gray-600">完成 10 步 onboarding，AI 立即產生專屬你的建議與 system prompt。</p>
+              </div>
             </div>
-            <div class="flex gap-4">
-              <div class="font-mono text-xs mt-1 w-6 text-right text-gray-400">02</div>
-              <div>首頁總覽今日進度與核心任務，一鍵啟動專注。</div>
+
+            <!-- Step 2 -->
+            <div class="step-item animate-on-scroll flex gap-5 group">
+              <div class="flex-shrink-0 w-9 h-9 rounded-2xl bg-[#E7EB54] text-[#141414] font-bold flex items-center justify-center text-sm mt-1 shadow-inner group-hover:scale-110 transition">02</div>
+              <div>
+                <div class="font-semibold text-lg tracking-tight mb-1">每日總覽與一鍵專注</div>
+                <p class="text-gray-600">首頁顯示今日進度與核心任務，一鍵就能啟動番茄鐘，無需切換 app。</p>
+              </div>
             </div>
-            <div class="flex gap-4">
-              <div class="font-mono text-xs mt-1 w-6 text-right text-gray-400">03</div>
-              <div>使用 AI 夥伴輸入「這週要準備期中考」，自動拆解成可執行的任務。</div>
+
+            <!-- Step 3 -->
+            <div class="step-item animate-on-scroll flex gap-5 group">
+              <div class="flex-shrink-0 w-9 h-9 rounded-2xl bg-[#E7EB54] text-[#141414] font-bold flex items-center justify-center text-sm mt-1 shadow-inner group-hover:scale-110 transition">03</div>
+              <div>
+                <div class="font-semibold text-lg tracking-tight mb-1">AI 夥伴即時協助</div>
+                <p class="text-gray-600">隨時輸入「這週要準備期中考」，AI 自動拆解成可執行的每日任務。</p>
+              </div>
             </div>
-            <div class="flex gap-4">
-              <div class="font-mono text-xs mt-1 w-6 text-right text-gray-400">04</div>
-              <div>每週自動產生 Weekly Memories 回顧，幫助你持續調整節奏。</div>
+
+            <!-- Step 4 -->
+            <div class="step-item animate-on-scroll flex gap-5 group">
+              <div class="flex-shrink-0 w-9 h-9 rounded-2xl bg-[#E7EB54] text-[#141414] font-bold flex items-center justify-center text-sm mt-1 shadow-inner group-hover:scale-110 transition">04</div>
+              <div>
+                <div class="font-semibold text-lg tracking-tight mb-1">每週自動陪伴</div>
+                <p class="text-gray-600">Weekly Memories 自動產生，AI 幫你分析進度並給出下週建議。</p>
+              </div>
             </div>
           </div>
         </div>
-        
-        <div class="bg-[#F2F2F7] rounded-3xl p-8 text-sm">
-          <div class="font-medium mb-4">核心價值</div>
-          <ul class="space-y-3 text-gray-600">
-            <li class="flex gap-3"><span class="text-[#E7EB54]">→</span> 所有資料主要儲存在你的裝置</li>
-            <li class="flex gap-3"><span class="text-[#E7EB54]">→</span> AI 僅在你使用相關功能時才會傳送必要內容</li>
-            <li class="flex gap-3"><span class="text-[#E7EB54]">→</span> 完整支援小工具與鎖屏即時活動</li>
-            <li class="flex gap-3"><span class="text-[#E7EB54]">→</span> 可在設定頁完全控制個人化 AI 指令</li>
-          </ul>
+
+        <!-- Right: Visual card with timeline mock + small effects -->
+        <div class="lg:col-span-2">
+          <div class="bg-gradient-to-br from-[#F2F2F7] to-white rounded-3xl p-8 shadow-inner relative overflow-hidden border">
+            <!-- Decorative firefly elements -->
+            <div class="absolute -top-4 -right-4 w-20 h-20 bg-[#E7EB54]/20 rounded-full blur-xl"></div>
+            
+            <div class="font-medium mb-5 flex items-center gap-2">
+              <span class="text-[#E7EB54]">✦</span> 
+              核心價值
+            </div>
+
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start gap-3 p-3 rounded-2xl hover:bg-white/60 transition group">
+                <div class="text-xl mt-0.5 group-hover:scale-110 transition">📱</div>
+                <div>
+                  <div class="font-medium">本地優先</div>
+                  <div class="text-gray-600 text-xs">所有資料都在你的裝置，無需擔心隱私</div>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-3 p-3 rounded-2xl hover:bg-white/60 transition group">
+                <div class="text-xl mt-0.5 group-hover:scale-110 transition">🪲</div>
+                <div>
+                  <div class="font-medium">AI 隨時陪伴</div>
+                  <div class="text-gray-600 text-xs">只在需要時傳送必要內容，高度個人化</div>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-3 p-3 rounded-2xl hover:bg-white/60 transition group">
+                <div class="text-xl mt-0.5 group-hover:scale-110 transition">🔄</div>
+                <div>
+                  <div class="font-medium">跨裝置同步</div>
+                  <div class="text-gray-600 text-xs">小工具 + Live Activity，鎖屏也能看到進度</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Small visual "time blocks" illustration -->
+            <div class="mt-6 pt-4 border-t text-[10px] text-gray-500 flex gap-2 items-center">
+              <div class="flex-1 h-1.5 bg-[#E7EB54]/30 rounded-full overflow-hidden">
+                <div class="h-full w-[65%] bg-[#E7EB54] rounded-full animate-[progress_2s_ease-in-out]"></div>
+              </div>
+              <span>今日完成 65%</span>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
 
   <!-- AI 功能亮點 (重設計) -->
-  <div class="max-w-6xl mx-auto px-6 py-16 bg-white border-y">
+  <div class="max-w-6xl mx-auto px-6 py-16 bg-white border-y animate-on-scroll">
     <div class="text-center mb-12">
       <div class="inline-block px-4 py-1 bg-[#E7EB54]/10 text-[#E7EB54] text-sm font-semibold tracking-wider rounded-full mb-3">POWERED BY GEMINI</div>
       <h2 class="text-4xl font-bold tracking-tight mb-3">螢火蟲 AI 到底能做什麼？</h2>
